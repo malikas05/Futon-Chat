@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.malikas.malikaschat.SettingsActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile_image"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Name"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/settings_image"
+        android:id="@+id/settings_name"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi there, I'm using Malikas Chat App"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/settings_name"
+        android:id="@+id/settings_status"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/settings_image_btn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Change image"
+        android:backgroundTint="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/settings_status_btn"
+        />
+
+    <Button
+        android:id="@+id/settings_status_btn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Change status"
+        android:backgroundTint="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.malikas.malikaschat.StatusActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/status_toolbar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/status_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/status_toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorPrimary"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Status"
+             />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/status_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Save Changes"
+        android:layout_below="@+id/status_input"
+        android:layout_alignEnd="@+id/status_input"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

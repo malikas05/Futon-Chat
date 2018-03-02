@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "859397704375",
+    "firebase_url": "https://malikaschat.firebaseio.com",
+    "project_id": "malikaschat",
+    "storage_bucket": "malikaschat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859397704375:android:154450870258478e",
+        "android_client_info": {
+          "package_name": "com.malikas.malikaschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859397704375-5q83v61rdqfd7p9l3nargsp7e3i94s69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malikas.malikaschat",
+            "certificate_hash": "f68f10d88f1e4f838149213f8a4efba397faf16f"
+          }
+        },
+        {
+          "client_id": "859397704375-g7rvpbdh8ltgjqln12skioshcqhb9n95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC0uMm6JtWsNHf-W4DJxUD_flCsDBLS1A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859397704375-g7rvpbdh8ltgjqln12skioshcqhb9n95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

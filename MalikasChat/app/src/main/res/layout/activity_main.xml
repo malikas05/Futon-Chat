@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.malikas.malikaschat.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/app_bar_layout"
+                android:id="@+id/main_page_toolbar"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/custom_bar_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/profile_image"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_tabs"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:id="@+id/mainTabPager">
+
+    </android.support.v4.view.ViewPager>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:menu_fab_size="normal"
+        app:menu_showShadow="true"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:menu_colorPressed="@color/colorPrimary"
+        app:menu_colorRipple="#99FFFFFF"
+        app:menu_animationDelayPerItem="50"
+        app:menu_icon="@drawable/ic_menu"
+        app:menu_buttonSpacing="0dp"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_paddingTop="4dp"
+        app:menu_labels_paddingRight="8dp"
+        app:menu_labels_paddingBottom="4dp"
+        app:menu_labels_paddingLeft="8dp"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_textColor="#FFFFFF"
+        app:menu_labels_textSize="14sp"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_colorNormal="#333333"
+        app:menu_labels_colorPressed="#444444"
+        app:menu_labels_colorRipple="#66FFFFFF"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="false"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_position="left"
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:layout_behavior="com.malikas.malikaschat.FABBehavior">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/main_users_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/all_users_icon"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_colorRipple="@color/colorAccent"
+            app:fab_label="All Users"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/main_new_message_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/new_message_icon"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_colorRipple="@color/colorAccent"
+            app:fab_label="New Message"/>
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>
